@@ -1,4 +1,4 @@
 package Proyecto.Sula;
 
-public class Ejemplo {
+public class Punto_12_4 {
 }
