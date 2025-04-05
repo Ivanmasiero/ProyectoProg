@@ -32,5 +32,4 @@ public class PuntosaExponer {
         s.add(2);
         System.out.println(s);
     };
-    }
 }
