@@ -1,33 +1,37 @@
 package Proyecto.Paula;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        //Creamos un ArrayList de 3 libros
-        List<Libro> libros1 = new ArrayList<>();
-            libros1.add(new Libro ("Libro 8","Autor f",2000));
-            libros1.add(new Libro ("Libro 4","Autor z",2001));
-            libros1.add(new Libro ("Libro 6","Autor s",2020));
 
         //Primera forma, creando una clase explícita
 
-        //Dentro de la anotación diamante debemos indicar el tipo de objeto a comparar
+        //Creamos un ArrayList de 3 libros
+        //Dentro de la anotación diamante debemos indicar el tipo de objeto
+        List<Libro> libros1 = new ArrayList<>();
+        libros1.add(new Libro ("Libro 8","Autor f",2000));
+        libros1.add(new Libro ("Libro 4","Autor z",2001));
+        libros1.add(new Libro ("Libro 6","Autor s",2020));
+
+        //Creamos un objeto CompararTitulo y lo pasamos a la función donde se va a usar
         Comparator<Libro> comparar=new CompararTitulo();
+        libros1.sort(comparar);
         //Collections.sort(libros1,comparar); → Esta línea es la que pone de ejemplo en el libro ya que
         //antes las listas no tenían su propio método .sort (java 8)
-        libros1.sort(comparar);
+
+        //También podríamos utilizar esta línea que hace lo mismo pero en una única línea
+        //libros1.sort(new CompararTitulo());
 
         System.out.println("Lista de libros ordenados por título (Clase explícita):");
-        for (int i=0;i<libros1.size();i++) {
-            System.out.println(libros1.get(i));
+        for (Libro libro : libros1) {
+            System.out.println(libro);
         }
 
         //Segunda forma, mediante una clase anónima
-
+        //Si sólo lo vamos a utilizar una vez no merece la pena implementar una clase
         List<Libro> libros2 = new ArrayList<>();
         libros2.add(new Libro ("Libro 8","Autor f",2000));
         libros2.add(new Libro ("Libro 4","Autor z",2001));
@@ -38,11 +42,20 @@ public class Main {
                 return l1.getTitulo().compareTo(l2.getTitulo());
             }
         };
-        Collections.sort(libros2,comparar2);
+        libros2.sort(comparar2);
+
+        //Otra opción es:
+        /*
+        libros2.sort(new Comparator<>() {
+            public int compare(Libro l1, Libro l2) {
+                return l1.getTitulo().compareTo(l2.getTitulo());
+            }
+         });
+         */
 
         System.out.println("Lista de libros ordenados por título (Clase anónima):");
-        for (int i=0;i<libros2.size();i++) {
-            System.out.println(libros2.get(i));
+        for (Libro libro : libros2) {
+            System.out.println(libro);
         }
 
         //Tercera forma (Expresiones lambda)
@@ -57,12 +70,12 @@ public class Main {
         Comparator<Libro> comparar3=(Libro l1,Libro l2) -> {return l1.getTitulo().compareTo(l2.getTitulo());};
         libros3.sort(comparar3);
 
-
+        //Otra opción en una única línea:
         //Collections.sort (libros3, (Libro l1, Libro l2) -> {return l1.getTitulo().compareTo(l2.getTitulo());});
 
         System.out.println("Lista de libros ordenados por título (Expresión Lambda):");
-        for (int i=0;i<libros3.size();i++) {
-            System.out.println(libros3.get(i));
+        for (Libro libro : libros3) {
+            System.out.println(libro);
         }
 
     }
