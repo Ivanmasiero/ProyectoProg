@@ -1,5 +1,7 @@
 package Proyecto.Adri;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.*;
 
 public class InterfacesGenericos {
@@ -20,7 +22,7 @@ public class InterfacesGenericos {
 
         // Orden natural por dni
         @Override
-        public int compareTo(Cliente o) {
+        public int compareTo(@NotNull Cliente o) {
             return dni.compareTo(o.dni);
         }
     }
