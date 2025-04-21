@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d67115f0-ee2c-4e66-9665-f7411ad5c874" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Diego/InterfazCollections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Adri/Genericos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Adri/InterfacesGenericos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Adri/TiposDeColecciones.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Diego/Ejemplo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Diego/Ejemplo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Adri/Ejemplo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Adri/Limites.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "adriansag"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ivanmasiero/ProyectoProg",
+    "accountId": "a84aa929-20c5-476f-85d9-dd95e88356eb"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -38,6 +53,7 @@
     "Application.InterfazCollections.executor": "Run",
     "Application.Zapatilla.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/ivanmasiero/Documents/DAM/Programación/ProyectoProg/src/main/java/ivan/Main.java"
