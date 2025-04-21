@@ -1,9 +1,6 @@
 package Proyecto.Sula;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Punto_12_4 {
     public static void main(String[] args) {
@@ -19,17 +16,16 @@ public class Punto_12_4 {
 
         Set<Integer> lhs= new LinkedHashSet<>(); // LinkedHashSet-> inserta los elementos al final, garantiza orden basado en la inserción
 
-        añadeNumeros(hs);
-        añadeNumeros(ts);
-        añadeNumeros(lhs);
+        List<Set<Integer>> lista=Arrays.asList(hs,ts,lhs);
+        lista.forEach(Punto_12_4::agregaNumeros);
+        lista.forEach(s -> System.out.println(s+" "+ s.getClass()));
 
     }
 
-    private static void añadeNumeros(Set<Integer> s){
+    private static void agregaNumeros(Set<Integer> s){
         s.add(60);
         s.add(20);
         s.add(7);
         s.add(2);
-        System.out.println(s);
-    };
+    }
 }
