@@ -22,8 +22,6 @@ public class Genericos {
             System.out.println("Contenido: " + c.objeto);
         }
     }
-
-
     public void main(String[] args) {
         // Con <Integer> nos aseguramos que si o si el tipo de dato que se utilizara sera un entero
         Contenedor<Integer> c = new Contenedor<>();

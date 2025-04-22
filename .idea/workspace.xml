@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d67115f0-ee2c-4e66-9665-f7411ad5c874" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Ivan/Stream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Adri/Genericos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Adri/Genericos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Adri/InterfacesGenericos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Adri/InterfacesGenericos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Adri/Limites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Adri/Limites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Diego/Ejemplo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Ivan/Ejemplo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Ivan/Stream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/Ejemplo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Paula/Ejemplo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Unai/Ejemplo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +31,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;adriansag&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ivanmasiero/ProyectoProg&quot;,
+    &quot;accountId&quot;: &quot;a84aa929-20c5-476f-85d9-dd95e88356eb&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -34,13 +54,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Interfaces.executor": "Run",
+    "Application.InterfazCollections.executor": "Run",
+    "Application.Punto_12_5.executor": "Run",
+    "Application.Tuberias.executor": "Run",
     "Application.Zapatilla.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/ivanmasiero/Documents/DAM/Programación/ProyectoProg/src/main/java/ivan/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Proyecto.Diego" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Zapatilla" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Proyecto.Unai.Zapatilla" />
