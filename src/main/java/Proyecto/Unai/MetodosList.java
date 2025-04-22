@@ -1,39 +1,28 @@
 package Proyecto.Unai;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
-/** TO-DO ELIMINAR ANTES DE EXPONER
- * <br>
- * -Cambiar contenido de las listas para que sea más visual (no solo letras)<br>
- * -¿¿¿¿Hacer un programa más complejo que use métodos de List??? (Mirar si da tiempo y si es realmente necesario)<br>
- * -Revisar comentarios
- */
 
 public class MetodosList {
     public static void main(String[] args) {
         List<String> frutas = new ArrayList<>();
 
-
-
-        //add para añadir elementos
+        //Usamos el método add para añadir elementos
         frutas.add("Manzana");
         frutas.add("Platano");
         frutas.add("Kiwi");
-        System.out.println("frutas = " + frutas);
+        System.out.println("frutas: " + frutas);
 
         //También podemos añadir en posiciones concretas de la lista
         frutas.add(1, "Mandarina");
-        System.out.println("Add en posición 1: " + frutas);
+        System.out.println("\nAdd 'Mandarina' en posición 1: " + frutas);
 
         //Si descomentas da error, está fuera de rango
         //frutas.add(-1,"Melocotón");
         frutas.add(3,"Melocotón");
-        System.out.println("Add en 3 = " + frutas);
+        System.out.println("\nAdd 'Melocotón' en posición 3 = " + frutas);
 
-        System.out.println("frutas.get(1) = " + frutas.get(1));
+        System.out.println("\nfrutas.get(1) = " + frutas.get(1));
 
 
         //Copia que usaremos más adelante con las sublistas
@@ -46,34 +35,37 @@ public class MetodosList {
 
         //Cambiar el objeto de una posición con set
         frutas.set(0,"Albaricoque");
-        System.out.println("frutas = " + frutas);
+        System.out.println("\nfrutas : " + frutas);
 
         //Eliminar por índice
         frutas.remove(2);
-        System.out.println("Después de remove 2: " + frutas);
+        System.out.println("\n\nDespués de remove posición 2: " + frutas);
         frutas.remove("Mandarina");
         //Este no funciona, sensible a mayúsculas
         //frutas.remove("mandarina");
-        System.out.println("Después de remove \"Mandarina\": " + frutas);
+        System.out.println("\nDespués de remove \"Mandarina\": " + frutas);
 
         System.out.println("¿Contiene 'Mandarina'? " + frutas.contains("Mandarina"));
 
         //Podemos buscar el índice de un objeto de la lista
-        System.out.println("Posición de Kiwi: " + frutas.indexOf("Kiwi"));
+        System.out.println("\n\nPosición de Kiwi: " + frutas.indexOf("Kiwi"));
         //¡CUIDADO! Solo nos dice el índice de la primera vez que aparece el objeto de
         frutas.add("Kiwi");
         System.out.println(frutas);
-        System.out.println("Posición de Kiwi: " + frutas.indexOf("Kiwi"));
+        System.out.println("\nPrimera posición de Kiwi: " + frutas.indexOf("Kiwi"));
 
         //Si queremos saber la última posición donde aparece usamos lastIndexOf()
-        System.out.println("Ultima posición de Kiwi " + frutas.lastIndexOf("Kiwi"));
+        System.out.println("Ultima posición de Kiwi: " + frutas.lastIndexOf("Kiwi"));
 
         //Tanto indexOf() como lastIndexOf() devuelven -1 si no está el objeto en la lista
 
         //Podemos comprobar si la lista está vacía o no
+        System.out.print("\n\nAntes del clear: ");
         System.out.println(frutas.isEmpty()?"La lista está vacía":"La lista tiene elementos");
-        //También podemos vaciar la lista
 
+
+        //También podemos vaciar la lista
+        System.out.print("Después del clear: ");
         frutas.clear();
         System.out.println(frutas.isEmpty()?"La lista está vacía":"La lista tiene elementos");
 
@@ -86,19 +78,19 @@ public class MetodosList {
         //letras.clear();
 
         //Así podemos comprobar el tamaño de las listas
-        System.out.println("Tamaño de la lista 'letras' "+letras.size());
+        System.out.println("\nTamaño de la lista 'letras' "+letras.size());
 
         //Podemos devolver un objeto Iterator para recorrer los elementos de la lista y así
         //aprovechar los métodos de Iterator, pero con este Iterator SOLO podemos ir hacia delante.
         Iterator <Character> it=letras.iterator();
-        System.out.println("Recorriendo la lista con Iterator: ");
+        System.out.println("\n\nRecorriendo la lista con Iterator: ");
         while(it.hasNext())
             System.out.print(it.next());
 
         //Hay un iterador pensado para listas que extiende a Iterator y nos permite recorrerlo
         //en las dos direcciones
         ListIterator <Character> lit = letras.listIterator();
-        System.out.println("\nRecorriendo la lista con ListIterator hacia delante: ");
+        System.out.println("\n\n\nRecorriendo la lista con ListIterator hacia delante: ");
         while (lit.hasNext())
             System.out.print(lit.next());
         System.out.println("\nRecorriendo la lista con ListIterator hacia atrás: ");
@@ -107,18 +99,29 @@ public class MetodosList {
         System.out.println();
 
         //Podemos usar el método forEach de Iterable con las listas
-        letras.forEach(System.out::println);
+        System.out.println("\n\nImprimiendo contenido de la lista con forEach: ");
+        letras.forEach(System.out::print);
 
         //Podemos crear sublistas a partir de otra indicando las posiciones de la lista padre
         //en las que empieza y acaba la sublista
         List<Character> letritas =letras.subList(3,5);
-        System.out.println(letritas);
+        System.out.println("\n\nSublista letritas = " + letritas);
+
+
         //También podemos usar sublistas como un rango
-        System.out.println("Antes del clear con sublist: "+frutas2);
+        System.out.println("\n\nAntes del clear con sublist: "+frutas2);
         frutas2.subList(1,3).clear();
         System.out.println("Después del clear con sublist: "+frutas2);
 
-        // toArray() - Convertir a array
-        // toArray(T[] a) - Convertir a array de tipo específico
+        //Podemos convertir una lista en array y usar metodos de la clase Arrays con ellos
+        System.out.println("\n\nClase usando toArray sin tipo: "+letras.toArray().getClass());
+        System.out.println("Array de Objects: "+Arrays.toString(letras.toArray()));
+
+
+        //Si no especificamos el tipo del array, nos devuelve un array de Objects
+        Character [] array=letras.toArray(new Character[letras.size()]);
+        System.out.println("\n\nClase usando toArray con tipo Character"+array.getClass());
+        System.out.println("Array de Character: "+Arrays.toString(array));
+
     }
 }
