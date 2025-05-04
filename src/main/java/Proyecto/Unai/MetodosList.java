@@ -21,12 +21,14 @@ public class MetodosList {
         //frutas.add(-1,"Melocotón");
         frutas.add(3,"Melocotón");
         System.out.println("\nAdd 'Melocotón' en posición 3 = " + frutas);
+        //También tenemos addAll para añadir todos los elementos de una colección a una lista
 
         System.out.println("\nfrutas.get(1) = " + frutas.get(1));
 
 
         //Copia que usaremos más adelante con las sublistas
         List<String> frutas2 = new ArrayList<>(frutas);
+        System.out.println("\n¿Son iguales frutas y frutas2?" + frutas2.equals(frutas));
         //Si descomentamos esta línea dará error más adelante porque no crea realmente una copia
         //solo hace que la lista frutas2 apunte al mismo sitio que frutas, asi que todos los cambios
         //que hagamos en frutas también se verán en frutas2.
@@ -44,19 +46,20 @@ public class MetodosList {
         //Este no funciona, sensible a mayúsculas
         //frutas.remove("mandarina");
         System.out.println("\nDespués de remove \"Mandarina\": " + frutas);
+        //También tenemos removeAll para añadir todos los elementos de una  lista
+
 
         System.out.println("¿Contiene 'Mandarina'? " + frutas.contains("Mandarina"));
 
         //Podemos buscar el índice de un objeto de la lista
         System.out.println("\n\nPosición de Kiwi: " + frutas.indexOf("Kiwi"));
-        //¡CUIDADO! Solo nos dice el índice de la primera vez que aparece el objeto de
+        //¡CUIDADO! Solo nos dice el índice de la primera vez que aparece el objeto
         frutas.add("Kiwi");
         System.out.println(frutas);
         System.out.println("\nPrimera posición de Kiwi: " + frutas.indexOf("Kiwi"));
 
         //Si queremos saber la última posición donde aparece usamos lastIndexOf()
         System.out.println("Ultima posición de Kiwi: " + frutas.lastIndexOf("Kiwi"));
-
         //Tanto indexOf() como lastIndexOf() devuelven -1 si no está el objeto en la lista
 
         //Podemos comprobar si la lista está vacía o no
@@ -102,6 +105,13 @@ public class MetodosList {
         System.out.println("\n\nImprimiendo contenido de la lista con forEach: ");
         letras.forEach(System.out::print);
 
+        //Podemos ordenar con sort y usando un comparador
+        System.out.println("\n\nFrutas sin ordenar: "+frutas2);
+        frutas2.sort(Comparator.naturalOrder());
+        System.out.println("\n\nFrutas ordenadas: "+frutas2);
+
+
+
         //Podemos crear sublistas a partir de otra indicando las posiciones de la lista padre
         //en las que empieza y acaba la sublista
         List<Character> letritas =letras.subList(3,5);
@@ -113,7 +123,7 @@ public class MetodosList {
         frutas2.subList(1,3).clear();
         System.out.println("Después del clear con sublist: "+frutas2);
 
-        //Podemos convertir una lista en array y usar metodos de la clase Arrays con ellos
+        //Podemos convertir una lista en array para usar metodos de la clase Arrays con ellos
         System.out.println("\n\nClase usando toArray sin tipo: "+letras.toArray().getClass());
         System.out.println("Array de Objects: "+Arrays.toString(letras.toArray()));
 
@@ -122,6 +132,8 @@ public class MetodosList {
         Character [] array=letras.toArray(new Character[letras.size()]);
         System.out.println("\n\nClase usando toArray con tipo Character"+array.getClass());
         System.out.println("Array de Character: "+Arrays.toString(array));
+
+
 
     }
 }
