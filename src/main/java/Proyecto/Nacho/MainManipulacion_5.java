@@ -2,7 +2,7 @@ package Proyecto.Nacho;
 
 import java.util.*;
 
-public class MainManipulacion {
+public class MainManipulacion_5 {
     public static void main(String[] args) {
         List<Integer> datos = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
         System.out.println("Original: " + datos);
