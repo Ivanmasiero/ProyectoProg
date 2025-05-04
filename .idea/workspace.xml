@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d67115f0-ee2c-4e66-9665-f7411ad5c874" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/ComparaNombres.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/MainBusqueda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/MainManipulacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/MainOrdenacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/MainUtilidades.java" afterDir="false" />
+    <list default="true" id="d67115f0-ee2c-4e66-9665-f7411ad5c874" name="Changes" comment="Nacho">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/Cliente_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/ComparaNombres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/ComparaNombres_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/MainBusqueda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/MainBusqueda_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/MainManipulacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/MainManipulacion_5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/MainOrdenacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/MainOrdenacion_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/MainUtilidades.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto/Nacho/MainUtilidades_6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;IgnacioSY00&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ivanmasiero/ProyectoProg.git&quot;,
+    &quot;accountId&quot;: &quot;54b27323-6120-42e2-9c9c-ff7c0c753503&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -37,20 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MainBusqueda.executor": "Run",
-    "Application.MainOrdenacion.executor": "Run",
-    "Application.Zapatilla.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/ivanmasiero/Documents/DAM/Programación/ProyectoProg/src/main/java/ivan/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MainBusqueda.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainOrdenacion.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Zapatilla.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/ivanmasiero/Documents/DAM/Programación/ProyectoProg/src/main/java/ivan/Main.java&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.MainBusqueda">
-    <configuration name="MainBusqueda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Proyecto.Nacho.MainBusqueda" />
+}</component>
+  <component name="RunManager" selected="Application.MainBusqueda_4">
+    <configuration name="MainBusqueda_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Proyecto.Nacho.MainBusqueda_4" />
       <module name="ProyectoProg" />
       <extension name="coverage">
         <pattern>
@@ -62,8 +78,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainOrdenacion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Proyecto.Nacho.MainOrdenacion" />
+    <configuration name="MainOrdenacion_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Proyecto.Nacho.MainOrdenacion_3" />
       <module name="ProyectoProg" />
       <extension name="coverage">
         <pattern>
@@ -90,8 +106,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainBusqueda" />
-        <item itemvalue="Application.MainOrdenacion" />
+        <item itemvalue="Application.MainBusqueda_4" />
+        <item itemvalue="Application.MainOrdenacion_3" />
         <item itemvalue="Application.Zapatilla" />
       </list>
     </recent_temporary>
@@ -105,7 +121,31 @@
       <option name="presentableId" value="Default" />
       <updated>1743620198467</updated>
     </task>
+    <task id="LOCAL-00001" summary="Nacho">
+      <option name="closed" value="true" />
+      <created>1745321607059</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745321607059</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Nacho" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nacho" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

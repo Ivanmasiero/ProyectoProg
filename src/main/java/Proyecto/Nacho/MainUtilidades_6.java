@@ -2,7 +2,7 @@ package Proyecto.Nacho;
 
 import java.util.*;
 
-public class MainUtilidades {
+public class MainUtilidades_6 {
     public static void main(String[] args) {
         List<Integer> datos = new ArrayList<>(Arrays.asList(1, 2, 3, 1, 7, 7));
 
