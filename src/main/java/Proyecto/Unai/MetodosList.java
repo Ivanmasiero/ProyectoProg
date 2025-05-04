@@ -21,7 +21,6 @@ public class MetodosList {
         //frutas.add(-1,"Melocotón");
         frutas.add(3,"Melocotón");
         System.out.println("\nAdd 'Melocotón' en posición 3 = " + frutas);
-        //También tenemos addAll para añadir todos los elementos de una colección a una lista
 
         System.out.println("\nfrutas.get(1) = " + frutas.get(1));
 
@@ -46,7 +45,6 @@ public class MetodosList {
         //Este no funciona, sensible a mayúsculas
         //frutas.remove("mandarina");
         System.out.println("\nDespués de remove \"Mandarina\": " + frutas);
-        //También tenemos removeAll para añadir todos los elementos de una  lista
 
 
         System.out.println("¿Contiene 'Mandarina'? " + frutas.contains("Mandarina"));
@@ -73,9 +71,9 @@ public class MetodosList {
         System.out.println(frutas.isEmpty()?"La lista está vacía":"La lista tiene elementos");
 
 
-        //List.of no es un método de la interfaz List, si no de la clase List en java.util.List
-        //Pero es útil para llenar listas rápido. HAY QUE TENER EN CUENTA QUE LAS LISTAS CREADAS CON
-        //List.of SON INMUTABLES
+
+        //List.of es un método estático de List útil para llenar listas rápido.
+        // HAY QUE TENER EN CUENTA QUE LAS LISTAS CREADAS CON List.of SON INMUTABLES
         List<Character> letras = List.of('a', 'b', 'c', 'a', 'd', 'a');
         //Si descomentas esto da error
         //letras.clear();
